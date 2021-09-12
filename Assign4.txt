@@ -1,0 +1,1045 @@
+> use ZenClass;
+switched to db ZenClass
+> db.users.insertMany([{"user_id":1,"name":"Rohan Raj","email":"rohon@gmail.com"},
+... ...  {"user_id":2,"name":"Nishi Mohan","email":"nisi@gmail.com"},
+... ...  {"user_id":3,"name":"Ether Swain","email":"ether@gmail.com"},
+... ...  {"user_id":4,"name":"Suraj Singh","email":"suraj@gmail.com"},
+... ...  {"user_id":5,"name":"Pinky","email":"pinky@gmail.com"},
+... ...  {"user_id":6,"name":"Akash Yadav","email":"akash@gmail.com"},
+... ...  {"user_id":7,"name":"Sagar Awasthi","email":"sagar@gmail.com"},
+... ...  {"user_id":8,"name":"Lipsa Samal","email":"lipsa@gmail.com"},
+... ...  {"user_id":9,"name":"Anurag Basu","email":"anurag@gmail.com"},
+... ...  {"user_id":10,"name":"Prateek Panchal","email":"prateek@gmail.com"},
+... ...  {"user_id":11,"name":"Aman Singh","email":"aman@gmail.com"},
+... ...  {"user_id":12,"name":"Neha Singh","email":"neha@gmail.com"},
+... ...  {"user_id":13,"name":"Priyanka Mishra","email":"priyanka@gmail.com"},
+... ...  {"user_id":14,"name":"Riya Sharma","email":"riya@gmail.com"},
+... ...  {"user_id":15,"name":"Princeton","email":"prince@gmail.com"},
+... ...  {"user_id":16,"name":"Supriya","email":"sup@gmail.com"}])
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("613e35bacad94375e106d17a"),
+                ObjectId("613e35bacad94375e106d17b"),
+                ObjectId("613e35bacad94375e106d17c"),
+                ObjectId("613e35bacad94375e106d17d"),
+                ObjectId("613e35bacad94375e106d17e"),
+                ObjectId("613e35bacad94375e106d17f"),
+                ObjectId("613e35bacad94375e106d180"),
+                ObjectId("613e35bacad94375e106d181"),
+                ObjectId("613e35bacad94375e106d182"),
+                ObjectId("613e35bacad94375e106d183"),
+                ObjectId("613e35bacad94375e106d184"),
+                ObjectId("613e35bacad94375e106d185"),
+                ObjectId("613e35bacad94375e106d186"),
+                ObjectId("613e35bacad94375e106d187"),
+                ObjectId("613e35bacad94375e106d188"),
+                ObjectId("613e35bacad94375e106d189")
+        ]
+}
+> db.users.find().pretty();
+{
+        "_id" : ObjectId("613e35bacad94375e106d17a"),
+        "user_id" : 1,
+        "name" : "Rohan Raj",
+        "email" : "rohon@gmail.com"
+}
+{
+        "_id" : ObjectId("613e35bacad94375e106d17b"),
+        "user_id" : 2,
+        "name" : "Nishi Mohan",
+        "email" : "nisi@gmail.com"
+}
+{
+        "_id" : ObjectId("613e35bacad94375e106d17c"),
+        "user_id" : 3,
+        "name" : "Ether Swain",
+        "email" : "ether@gmail.com"
+}
+{
+        "_id" : ObjectId("613e35bacad94375e106d17d"),
+        "user_id" : 4,
+        "name" : "Suraj Singh",
+        "email" : "suraj@gmail.com"
+}
+{
+        "_id" : ObjectId("613e35bacad94375e106d17e"),
+        "user_id" : 5,
+        "name" : "Pinky",
+        "email" : "pinky@gmail.com"
+}
+{
+        "_id" : ObjectId("613e35bacad94375e106d17f"),
+        "user_id" : 6,
+        "name" : "Akash Yadav",
+        "email" : "akash@gmail.com"
+}
+{
+        "_id" : ObjectId("613e35bacad94375e106d180"),
+        "user_id" : 7,
+        "name" : "Sagar Awasthi",
+        "email" : "sagar@gmail.com"
+}
+{
+        "_id" : ObjectId("613e35bacad94375e106d181"),
+        "user_id" : 8,
+        "name" : "Lipsa Samal",
+        "email" : "lipsa@gmail.com"
+}
+{
+        "_id" : ObjectId("613e35bacad94375e106d182"),
+        "user_id" : 9,
+        "name" : "Anurag Basu",
+        "email" : "anurag@gmail.com"
+}
+{
+        "_id" : ObjectId("613e35bacad94375e106d183"),
+        "user_id" : 10,
+        "name" : "Prateek Panchal",
+        "email" : "prateek@gmail.com"
+}
+{
+        "_id" : ObjectId("613e35bacad94375e106d184"),
+        "user_id" : 11,
+        "name" : "Aman Singh",
+        "email" : "aman@gmail.com"
+}
+{
+        "_id" : ObjectId("613e35bacad94375e106d185"),
+        "user_id" : 12,
+        "name" : "Neha Singh",
+        "email" : "neha@gmail.com"
+}
+{
+        "_id" : ObjectId("613e35bacad94375e106d186"),
+        "user_id" : 13,
+        "name" : "Priyanka Mishra",
+        "email" : "priyanka@gmail.com"
+}
+{
+        "_id" : ObjectId("613e35bacad94375e106d187"),
+        "user_id" : 14,
+        "name" : "Riya Sharma",
+        "email" : "riya@gmail.com"
+}
+{
+        "_id" : ObjectId("613e35bacad94375e106d188"),
+        "user_id" : 15,
+        "name" : "Princeton",
+        "email" : "prince@gmail.com"
+}
+{
+        "_id" : ObjectId("613e35bacad94375e106d189"),
+        "user_id" : 16,
+        "name" : "Supriya",
+        "email" : "sup@gmail.com"
+}
+> db.codekata.insertMany([{"cid":1,"name":"Rohan Raj","problems_solved":10},
+... ... {"cid":2,"name":"Nishi Mohan","problems_solved":16},
+... ... {"cid":3,"name":"Ether Swain","problems_solved":20},
+... ... {"cid":4,"name":"Suraj Singh","problems_solved":12},
+... ... {"cid":5,"name":"Pinky","Problems_solved":10},
+... ... {"cid":6,"name":"Akash Yadav","problems_solved":12},
+... ... {"cid":7,"name":"Sagar Awasthi","problems_solved":18},
+... ... {"cid":8,"name":"Lipsa Samal","problems_solved":20},
+... ... {"cid":9,"name":"Anurag Basu","problems_solved":25},
+... ... {"cid":10,"name":"Aman Singh","problems_solved":24},
+... ... {"cid":11,"name":"Riya Sharma","problems_solved":15},
+... ... {"cid":12,"name":"Neha Singh","problems_solved":26}])
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("613e364dcad94375e106d18a"),
+                ObjectId("613e364dcad94375e106d18b"),
+                ObjectId("613e364dcad94375e106d18c"),
+                ObjectId("613e364dcad94375e106d18d"),
+                ObjectId("613e364dcad94375e106d18e"),
+                ObjectId("613e364dcad94375e106d18f"),
+                ObjectId("613e364dcad94375e106d190"),
+                ObjectId("613e364dcad94375e106d191"),
+                ObjectId("613e364dcad94375e106d192"),
+                ObjectId("613e364dcad94375e106d193"),
+                ObjectId("613e364dcad94375e106d194"),
+                ObjectId("613e364dcad94375e106d195")
+        ]
+}
+>  db.codekata.find().pretty();
+{
+        "_id" : ObjectId("613e364dcad94375e106d18a"),
+        "cid" : 1,
+        "name" : "Rohan Raj",
+        "problems_solved" : 10
+}
+{
+        "_id" : ObjectId("613e364dcad94375e106d18b"),
+        "cid" : 2,
+        "name" : "Nishi Mohan",
+        "problems_solved" : 16
+}
+{
+        "_id" : ObjectId("613e364dcad94375e106d18c"),
+        "cid" : 3,
+        "name" : "Ether Swain",
+        "problems_solved" : 20
+}
+{
+        "_id" : ObjectId("613e364dcad94375e106d18d"),
+        "cid" : 4,
+        "name" : "Suraj Singh",
+        "problems_solved" : 12
+}
+{
+        "_id" : ObjectId("613e364dcad94375e106d18e"),
+        "cid" : 5,
+        "name" : "Pinky",
+        "Problems_solved" : 10
+}
+{
+        "_id" : ObjectId("613e364dcad94375e106d18f"),
+        "cid" : 6,
+        "name" : "Akash Yadav",
+        "problems_solved" : 12
+}
+{
+        "_id" : ObjectId("613e364dcad94375e106d190"),
+        "cid" : 7,
+        "name" : "Sagar Awasthi",
+        "problems_solved" : 18
+}
+{
+        "_id" : ObjectId("613e364dcad94375e106d191"),
+        "cid" : 8,
+        "name" : "Lipsa Samal",
+        "problems_solved" : 20
+}
+{
+        "_id" : ObjectId("613e364dcad94375e106d192"),
+        "cid" : 9,
+        "name" : "Anurag Basu",
+        "problems_solved" : 25
+}
+{
+        "_id" : ObjectId("613e364dcad94375e106d193"),
+        "cid" : 10,
+        "name" : "Aman Singh",
+        "problems_solved" : 24
+}
+{
+        "_id" : ObjectId("613e364dcad94375e106d194"),
+        "cid" : 11,
+        "name" : "Riya Sharma",
+        "problems_solved" : 15
+}
+{
+        "_id" : ObjectId("613e364dcad94375e106d195"),
+        "cid" : 12,
+        "name" : "Neha Singh",
+        "problems_solved" : 26
+}
+> db.attendance.insertOne({"aid":1,"name":Sibani Acharya","date":["2020-10-15","2020-10-16","2020-10-17","2020-10-18","2020-10-19","2020-10-22","2020-10-23","2020-10-24","2020-10-25","2020-10-26"],"status":["present","absent,"present","present","present","present","present,"present","present","present"]});
+uncaught exception: SyntaxError: missing } after property list :
+@(shell):1:47
+> db.attendance.insertOne({"aid":1,"name":"Sibani Acharya","date":["2020-10-15","2020-10-16","2020-10-17","2020-10-18","2020-10-19","2020-10-22","2020-10-23","2020-10-24","2020-10-25","2020-10-26"],"status":["present","absent,"present","present","present","present","present,"present","present","present"]});
+uncaught exception: SyntaxError: missing ] after element list :
+@(shell):1:225
+> db.attendance.insertOne({"aid":1,"name":"Sibani Acharya","date":["2020-10-15","2020-10-16","2020-10-17","2020-10-18","2020-10-19","2020-10-22","2020-10-23","2020-10-24","2020-10-25","2020-10-26"],"status":["present","absent","present","present","present","present","present,"present","present","present"]});
+uncaught exception: SyntaxError: missing ] after element list :
+@(shell):1:275
+> db.attendance.insertOne({"aid":1,"name":"Sibani Acharya","date":["2020-10-15","2020-10-16","2020-10-17","2020-10-18","2020-10-19","2020-10-22","2020-10-23","2020-10-24","2020-10-25","2020-10-26"],"status":["present","absent","present","present","present","present","present","present","present","present"]});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("613e39d7cad94375e106d196")
+}
+> db.attendance.insertOne({"aid":2, "name":"Nishi Mohan", "date":["2020-10-15","2020-10-16","2020-10-17","2020-10-18","2020-10-19","2020-10-22","2020-10-23","2020-10-24","2020-10-25","2020-10-26"], "status":["present","absent","present","present","present","present","present","present","present","present"]});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("613e39fbcad94375e106d197")
+}
+> db.attendance.insertOne({"aid":3, "name":"Ether Swain", "date":["2020-10-15","2020-10-16","2020-10-17","2020-10-18","2020-10-19","2020-10-22","2020-10-23","2020-10-24","2020-10-25","2020-10-26"], "status":["present","absent","present","present","absent","present","present","present","present","present"]});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("613e3a18cad94375e106d198")
+}
+> db.attendance.insertOne({"aid":4, "name":"Suraj Singh", "date":["2020-10-15","2020-10-16","2020-10-17","2020-10-18","2020-10-19","2020-10-22","2020-10-23","2020-10-24","2020-10-25","2020-10-26"], "status":["present","present","present","present","absent","present","present","present","present","present"]});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("613e3a2acad94375e106d199")
+}
+> db.attendance.insertOne({"aid":5, "name":"Neha Singh", "date":["2020-10-15","2020-10-16","2020-10-17","2020-10-18","2020-10-19","2020-10-22","2020-10-23","2020-10-24","2020-10-25","2020-10-26"], "status":["present","present","present","present","present","present","present","present","absent","present"]})
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("613e3a47cad94375e106d19a")
+}
+> db.attendance.insertOne({"aid":6, "name":"Pinky", "date":["2020-10-15","2020-10-16","2020-10-17","2020-10-18","2020-10-19","2020-10-22","2020-10-23","2020-10-24","2020-10-25","2020-10-26"], "status":["present","present","present","present","present","present","present","present","absent","absent"]})
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("613e3a62cad94375e106d19b")
+}
+> db.attendance.insertOne({"aid":7, "name":"Akask Yadav", "date":["2020-10-15","2020-10-16","2020-10-17","2020-10-18","2020-10-19","2020-10-22","2020-10-23","2020-10-24","2020-10-25","2020-10-26"], "status":["present","present","present","present","present","present","present","present","present","present"]})
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("613e3a72cad94375e106d19c")
+}
+> db.attendance.insertOne({"aid":8, "name":"Sagar Awasthi", "date":["2020-10-15","2020-10-16","2020-10-17","2020-10-18","2020-10-19","2020-10-22","2020-10-23","2020-10-24","2020-10-25","2020-10-26"], "status":["present","present","present","present","present","present","absent","present","present","present"]})
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("613e3ac0cad94375e106d19d")
+}
+> db.attendance.insertOne({"aid":9, "name":"Lipsa Samal", "date":["2020-10-15","2020-10-16","2020-10-17","2020-10-18","2020-10-19","2020-10-22","2020-10-23","2020-10-24","2020-10-25","2020-10-26"], "status":["present","present","present","present","present","present","present","present","present","present"]})
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("613e3bb8cad94375e106d19e")
+}
+> db.attendance.insertOne({"aid":10, "name":"Anurag Basu", "date":["2020-10-15","2020-10-16","2020-10-17","2020-10-18","2020-10-19","2020-10-22","2020-10-23","2020-10-24","2020-10-25","2020-10-26"], "status":["present","present","absent","present","present","present","present","present","present","present"]})
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("613e3bc7cad94375e106d19f")
+}
+> db.attendance.find().pretty();
+{
+        "_id" : ObjectId("613e39d7cad94375e106d196"),
+        "aid" : 1,
+        "name" : "Sibani Acharya",
+        "date" : [
+                "2020-10-15",
+                "2020-10-16",
+                "2020-10-17",
+                "2020-10-18",
+                "2020-10-19",
+                "2020-10-22",
+                "2020-10-23",
+                "2020-10-24",
+                "2020-10-25",
+                "2020-10-26"
+        ],
+        "status" : [
+                "present",
+                "absent",
+                "present",
+                "present",
+                "present",
+                "present",
+                "present",
+                "present",
+                "present",
+                "present"
+        ]
+}
+{
+        "_id" : ObjectId("613e39fbcad94375e106d197"),
+        "aid" : 2,
+        "name" : "Nishi Mohan",
+        "date" : [
+                "2020-10-15",
+                "2020-10-16",
+                "2020-10-17",
+                "2020-10-18",
+                "2020-10-19",
+                "2020-10-22",
+                "2020-10-23",
+                "2020-10-24",
+                "2020-10-25",
+                "2020-10-26"
+        ],
+        "status" : [
+                "present",
+                "absent",
+                "present",
+                "present",
+                "present",
+                "present",
+                "present",
+                "present",
+                "present",
+                "present"
+        ]
+}
+{
+        "_id" : ObjectId("613e3a18cad94375e106d198"),
+        "aid" : 3,
+        "name" : "Ether Swain",
+        "date" : [
+                "2020-10-15",
+                "2020-10-16",
+                "2020-10-17",
+                "2020-10-18",
+                "2020-10-19",
+                "2020-10-22",
+                "2020-10-23",
+                "2020-10-24",
+                "2020-10-25",
+                "2020-10-26"
+        ],
+        "status" : [
+                "present",
+                "absent",
+                "present",
+                "present",
+                "absent",
+                "present",
+                "present",
+                "present",
+                "present",
+                "present"
+        ]
+}
+{
+        "_id" : ObjectId("613e3a2acad94375e106d199"),
+        "aid" : 4,
+        "name" : "Suraj Singh",
+        "date" : [
+                "2020-10-15",
+                "2020-10-16",
+                "2020-10-17",
+                "2020-10-18",
+                "2020-10-19",
+                "2020-10-22",
+                "2020-10-23",
+                "2020-10-24",
+                "2020-10-25",
+                "2020-10-26"
+        ],
+        "status" : [
+                "present",
+                "present",
+                "present",
+                "present",
+                "absent",
+                "present",
+                "present",
+                "present",
+                "present",
+                "present"
+        ]
+}
+{
+        "_id" : ObjectId("613e3a47cad94375e106d19a"),
+        "aid" : 5,
+        "name" : "Neha Singh",
+        "date" : [
+                "2020-10-15",
+                "2020-10-16",
+                "2020-10-17",
+                "2020-10-18",
+                "2020-10-19",
+                "2020-10-22",
+                "2020-10-23",
+                "2020-10-24",
+                "2020-10-25",
+                "2020-10-26"
+        ],
+        "status" : [
+                "present",
+                "present",
+                "present",
+                "present",
+                "present",
+                "present",
+                "present",
+                "present",
+                "absent",
+                "present"
+        ]
+}
+{
+        "_id" : ObjectId("613e3a62cad94375e106d19b"),
+        "aid" : 6,
+        "name" : "Pinky",
+        "date" : [
+                "2020-10-15",
+                "2020-10-16",
+                "2020-10-17",
+                "2020-10-18",
+                "2020-10-19",
+                "2020-10-22",
+                "2020-10-23",
+                "2020-10-24",
+                "2020-10-25",
+                "2020-10-26"
+        ],
+        "status" : [
+                "present",
+                "present",
+                "present",
+                "present",
+                "present",
+                "present",
+                "present",
+                "present",
+                "absent",
+                "absent"
+        ]
+}
+{
+        "_id" : ObjectId("613e3a72cad94375e106d19c"),
+        "aid" : 7,
+        "name" : "Akask Yadav",
+        "date" : [
+                "2020-10-15",
+                "2020-10-16",
+                "2020-10-17",
+                "2020-10-18",
+                "2020-10-19",
+                "2020-10-22",
+                "2020-10-23",
+                "2020-10-24",
+                "2020-10-25",
+                "2020-10-26"
+        ],
+        "status" : [
+                "present",
+                "present",
+                "present",
+                "present",
+                "present",
+                "present",
+                "present",
+                "present",
+                "present",
+                "present"
+        ]
+}
+{
+        "_id" : ObjectId("613e3ac0cad94375e106d19d"),
+        "aid" : 8,
+        "name" : "Sagar Awasthi",
+        "date" : [
+                "2020-10-15",
+                "2020-10-16",
+                "2020-10-17",
+                "2020-10-18",
+                "2020-10-19",
+                "2020-10-22",
+                "2020-10-23",
+                "2020-10-24",
+                "2020-10-25",
+                "2020-10-26"
+        ],
+        "status" : [
+                "present",
+                "present",
+                "present",
+                "present",
+                "present",
+                "present",
+                "absent",
+                "present",
+                "present",
+                "present"
+        ]
+}
+{
+        "_id" : ObjectId("613e3bb8cad94375e106d19e"),
+        "aid" : 9,
+        "name" : "Lipsa Samal",
+        "date" : [
+                "2020-10-15",
+                "2020-10-16",
+                "2020-10-17",
+                "2020-10-18",
+                "2020-10-19",
+                "2020-10-22",
+                "2020-10-23",
+                "2020-10-24",
+                "2020-10-25",
+                "2020-10-26"
+        ],
+        "status" : [
+                "present",
+                "present",
+                "present",
+                "present",
+                "present",
+                "present",
+                "present",
+                "present",
+                "present",
+                "present"
+        ]
+}
+{
+        "_id" : ObjectId("613e3bc7cad94375e106d19f"),
+        "aid" : 10,
+        "name" : "Anurag Basu",
+        "date" : [
+                "2020-10-15",
+                "2020-10-16",
+                "2020-10-17",
+                "2020-10-18",
+                "2020-10-19",
+                "2020-10-22",
+                "2020-10-23",
+                "2020-10-24",
+                "2020-10-25",
+                "2020-10-26"
+        ],
+        "status" : [
+                "present",
+                "present",
+                "absent",
+                "present",
+                "present",
+                "present",
+                "present",
+                "present",
+                "present",
+                "present"
+        ]
+}
+> db.topics.insertMany([{ "tid":1, "topic":"SQL", "date":"2020-10-15", "mentor":"Asish Dash"},
+... ... {"tid":2,"topic":"JavaScript","date":"2020-10-17","mentor":"Rakesh Yadav"},
+... ... {"tid":3,"topic":"MongoDB","date":"2020-10-19","mentor":"Divya Agarwal"},
+... ... {"tid":4,"topic":"DevOps","date":"2020-10-22","mentor":"Ayush Shukla"},
+... ... {"tid":5,"topic":"Angular","date":"2020-10-24","mentor":"Vikram Rathore"}]);
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("613e3cb9cad94375e106d1a0"),
+                ObjectId("613e3cb9cad94375e106d1a1"),
+                ObjectId("613e3cb9cad94375e106d1a2"),
+                ObjectId("613e3cb9cad94375e106d1a3"),
+                ObjectId("613e3cb9cad94375e106d1a4")
+        ]
+}
+> db.topics.find().pretty();
+{
+        "_id" : ObjectId("613e3cb9cad94375e106d1a0"),
+        "tid" : 1,
+        "topic" : "SQL",
+        "date" : "2020-10-15",
+        "mentor" : "Asish Dash"
+}
+{
+        "_id" : ObjectId("613e3cb9cad94375e106d1a1"),
+        "tid" : 2,
+        "topic" : "JavaScript",
+        "date" : "2020-10-17",
+        "mentor" : "Rakesh Yadav"
+}
+{
+        "_id" : ObjectId("613e3cb9cad94375e106d1a2"),
+        "tid" : 3,
+        "topic" : "MongoDB",
+        "date" : "2020-10-19",
+        "mentor" : "Divya Agarwal"
+}
+{
+        "_id" : ObjectId("613e3cb9cad94375e106d1a3"),
+        "tid" : 4,
+        "topic" : "DevOps",
+        "date" : "2020-10-22",
+        "mentor" : "Ayush Shukla"
+}
+{
+        "_id" : ObjectId("613e3cb9cad94375e106d1a4"),
+        "tid" : 5,
+        "topic" : "Angular",
+        "date" : "2020-10-24",
+        "mentor" : "Vikram Rathore"
+}
+> db.tasks.insertMany([{"task_id":1,"task":"MySQL queries","users":["Rohan Raj","Ether Swain","Nishi Mohan","Suraj Singh","Neha Singh","Pinky","Anurag Basu","Sagar Awasthi","Lipsa Samal","Akash Yadav"],"given":"2020-10-15","submitted":"2020-10-17"}, {"task_id":2,"task":"MongoDB Exercises","users":["Rohan Raj","Ether Swain","Nishi Mohan","Suraj Singh","Neha Singh","Pinky","Anurag Basu","Sagar Awasthi","Lipsa Samal","Akash Yadav"],"given":"2020-10-18","submitted":"2020-10-20"}, {"task_id":3,"task":"DevOps Exercises","users":["Rohan Raj","Ether Swain","Nishi Mohan","Suraj Singh","Neha Singh","Pinky","Sagar Awasthi","Lipsa Samal","Akash Yadav"],"given":"2020-10-21","submitted":"2020-10-23"}])
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("613e3d0bcad94375e106d1a5"),
+                ObjectId("613e3d0bcad94375e106d1a6"),
+                ObjectId("613e3d0bcad94375e106d1a7")
+        ]
+}
+> db.tasks.insertMany([ {"task_id":4,"task":"Angular Exercises","users":["Rohan Raj","Ether Swain","Nishi Mohan","Suraj Singh","Neha Singh","Pinky","Anurag Basu","Sagar Awasthi","Lipsa Samal","Akash Yadav"],"given":"2020-10-24","submitted":"2020-10-25"}, {"task_id":5,"task":"JavaScript Exercises","users":["Rohan Raj","Ether Swain","Nishi Mohan","Suraj Singh","Neha Singh","Pinky","Sagar Awasthi","Lipsa Samal","Anurag Basu","Akash Yadav"],"given":"2020-10-28","submitted":"2020-10-30"}])
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("613e3d2acad94375e106d1a8"),
+                ObjectId("613e3d2acad94375e106d1a9")
+        ]
+}
+> db.tasks.find().pretty();
+{
+        "_id" : ObjectId("613e3d0bcad94375e106d1a5"),
+        "task_id" : 1,
+        "task" : "MySQL queries",
+        "users" : [
+                "Rohan Raj",
+                "Ether Swain",
+                "Nishi Mohan",
+                "Suraj Singh",
+                "Neha Singh",
+                "Pinky",
+                "Anurag Basu",
+                "Sagar Awasthi",
+                "Lipsa Samal",
+                "Akash Yadav"
+        ],
+        "given" : "2020-10-15",
+        "submitted" : "2020-10-17"
+}
+{
+        "_id" : ObjectId("613e3d0bcad94375e106d1a6"),
+        "task_id" : 2,
+        "task" : "MongoDB Exercises",
+        "users" : [
+                "Rohan Raj",
+                "Ether Swain",
+                "Nishi Mohan",
+                "Suraj Singh",
+                "Neha Singh",
+                "Pinky",
+                "Anurag Basu",
+                "Sagar Awasthi",
+                "Lipsa Samal",
+                "Akash Yadav"
+        ],
+        "given" : "2020-10-18",
+        "submitted" : "2020-10-20"
+}
+{
+        "_id" : ObjectId("613e3d0bcad94375e106d1a7"),
+        "task_id" : 3,
+        "task" : "DevOps Exercises",
+        "users" : [
+                "Rohan Raj",
+                "Ether Swain",
+                "Nishi Mohan",
+                "Suraj Singh",
+                "Neha Singh",
+                "Pinky",
+                "Sagar Awasthi",
+                "Lipsa Samal",
+                "Akash Yadav"
+        ],
+        "given" : "2020-10-21",
+        "submitted" : "2020-10-23"
+}
+{
+        "_id" : ObjectId("613e3d2acad94375e106d1a8"),
+        "task_id" : 4,
+        "task" : "Angular Exercises",
+        "users" : [
+                "Rohan Raj",
+                "Ether Swain",
+                "Nishi Mohan",
+                "Suraj Singh",
+                "Neha Singh",
+                "Pinky",
+                "Anurag Basu",
+                "Sagar Awasthi",
+                "Lipsa Samal",
+                "Akash Yadav"
+        ],
+        "given" : "2020-10-24",
+        "submitted" : "2020-10-25"
+}
+{
+        "_id" : ObjectId("613e3d2acad94375e106d1a9"),
+        "task_id" : 5,
+        "task" : "JavaScript Exercises",
+        "users" : [
+                "Rohan Raj",
+                "Ether Swain",
+                "Nishi Mohan",
+                "Suraj Singh",
+                "Neha Singh",
+                "Pinky",
+                "Sagar Awasthi",
+                "Lipsa Samal",
+                "Anurag Basu",
+                "Akash Yadav"
+        ],
+        "given" : "2020-10-28",
+        "submitted" : "2020-10-30"
+}
+> db.companydrives.insertOne({"company_id":101,"name":"IBM","users":["Rohan Raj","Nishi Mohan","Neha Singh","Ritu Rathi","Sagar Awasthi","Ether Swain","Aman Singh","Anurag Basu"],"date":"2020-10-25"})
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("613e3d55cad94375e106d1aa")
+}
+>  db.companydrives.insertOne({"company_id":102,"name":"Infosys","users":["Rohan Raj","Nishi Mohan","Ayush","Akash Singh","Ritu Rathi","Sagar Awasthi","Ether Swain","Aman Singh","Anurag Basu"],"date":"2020-10-20"})
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("613e3d6acad94375e106d1ab")
+}
+>  db.companydrives.insertMany([{"company_id":103,"name":"Virtusa","users":["Rajesh","Nishi Mohan","Ayush","Akanksha Singh","Rashmi","Sagar Awasthi","Ether Swain","Aman Singh"],"date":"2020-10-28"},
+... ... {"company_id":104,"name":"TekSystem","users":["Rahul","Nishi Mohan","Ayush","Akash Singh","Ritu Rathi","Sagar Awasthi","Lipsa Samal","Ether Swain","Suraj Singh","Anurag Basu"],"date":"2020-11-2"},
+... ... {"company_id":105,"name":"Finastra","users":["Rajdeep","Nishi Mohan","Ayush","Pooja","Neha Singh","Priyanka Mishra","Ritu Rathi","Sagar Awasthi","Ether Swain","Aman Singh","Akash Yadav"],"date":"2020-11-12"},
+... ... {"company_id":106,"name":"Wipro","users":["Rohan Raj","Sagar Awasthi","Nishi Mohan","Ayush","Akash Singh","Murali Murray","Nishchay","Suyash","Rohit","Sagar Awasthi","Ether Swain","Aman Singh","Anurag Basu"],"date":"2020-11-20"}])
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("613e3d7ccad94375e106d1ac"),
+                ObjectId("613e3d7ccad94375e106d1ad"),
+                ObjectId("613e3d7ccad94375e106d1ae"),
+                ObjectId("613e3d7ccad94375e106d1af")
+        ]
+}
+> db.companydrives.find().pretty();
+{
+        "_id" : ObjectId("613e3d55cad94375e106d1aa"),
+        "company_id" : 101,
+        "name" : "IBM",
+        "users" : [
+                "Rohan Raj",
+                "Nishi Mohan",
+                "Neha Singh",
+                "Ritu Rathi",
+                "Sagar Awasthi",
+                "Ether Swain",
+                "Aman Singh",
+                "Anurag Basu"
+        ],
+        "date" : "2020-10-25"
+}
+{
+        "_id" : ObjectId("613e3d6acad94375e106d1ab"),
+        "company_id" : 102,
+        "name" : "Infosys",
+        "users" : [
+                "Rohan Raj",
+                "Nishi Mohan",
+                "Ayush",
+                "Akash Singh",
+                "Ritu Rathi",
+                "Sagar Awasthi",
+                "Ether Swain",
+                "Aman Singh",
+                "Anurag Basu"
+        ],
+        "date" : "2020-10-20"
+}
+{
+        "_id" : ObjectId("613e3d7ccad94375e106d1ac"),
+        "company_id" : 103,
+        "name" : "Virtusa",
+        "users" : [
+                "Rajesh",
+                "Nishi Mohan",
+                "Ayush",
+                "Akanksha Singh",
+                "Rashmi",
+                "Sagar Awasthi",
+                "Ether Swain",
+                "Aman Singh"
+        ],
+        "date" : "2020-10-28"
+}
+{
+        "_id" : ObjectId("613e3d7ccad94375e106d1ad"),
+        "company_id" : 104,
+        "name" : "TekSystem",
+        "users" : [
+                "Rahul",
+                "Nishi Mohan",
+                "Ayush",
+                "Akash Singh",
+                "Ritu Rathi",
+                "Sagar Awasthi",
+                "Lipsa Samal",
+                "Ether Swain",
+                "Suraj Singh",
+                "Anurag Basu"
+        ],
+        "date" : "2020-11-2"
+}
+{
+        "_id" : ObjectId("613e3d7ccad94375e106d1ae"),
+        "company_id" : 105,
+        "name" : "Finastra",
+        "users" : [
+                "Rajdeep",
+                "Nishi Mohan",
+                "Ayush",
+                "Pooja",
+                "Neha Singh",
+                "Priyanka Mishra",
+                "Ritu Rathi",
+                "Sagar Awasthi",
+                "Ether Swain",
+                "Aman Singh",
+                "Akash Yadav"
+        ],
+        "date" : "2020-11-12"
+}
+{
+        "_id" : ObjectId("613e3d7ccad94375e106d1af"),
+        "company_id" : 106,
+        "name" : "Wipro",
+        "users" : [
+                "Rohan Raj",
+                "Sagar Awasthi",
+                "Nishi Mohan",
+                "Ayush",
+                "Akash Singh",
+                "Murali Murray",
+                "Nishchay",
+                "Suyash",
+                "Rohit",
+                "Sagar Awasthi",
+                "Ether Swain",
+                "Aman Singh",
+                "Anurag Basu"
+        ],
+        "date" : "2020-11-20"
+}
+> db.mentor.insertOne({"mid":1,"mentor_name":"Rajesh","users":["Rohan Raj","Akanksha Yadav","Rutul Mishra","Rohit","Priyanka","Asuthosh Das","Wallia","Vardhan","Anurag Basu","Pranjal","Kinjal","Rituraj","Neerja","Pankaj","Pradhiti"],"topic":"SQL"})
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("613e3db2cad94375e106d1b0")
+}
+> db.mentor.insertOne({"mid":2,"mentor_name":"Vikram","users":["Rohan","Rahul Raj","Prathamesh","Ashuthosh","Riya Sharma","Akanksha Yadav","Rutul Mishra","Rohit","Priyanka","Asuthosh Das","Wallia","Vardhan","Anurag Basu","Pranjal","Kinjal","Rituraj","Neerja","Pankaj","Pradhiti"],"topic":"mongoDB"})
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("613e3dc0cad94375e106d1b1")
+}
+> db.mentor.insertMany([{"mid":3,"mentor_name":"Divya","users":["Sristi","Rahul","Prathamesh","Aspeshk","Riya Sharma","Ashlok Yadav","Rupesh Mishra",,"Varun","Vardhan","Anuradha","Pritam","Anjali","Rituraj","Neerja"],"topic":"DevOps"},
+... ... {"mid":4,"mentor_name":"Akash Yadav","users":["Rohit","Raj","Riya Sharma","Akanksha Yadav","Rutul Mishra","Yash","Priyanka Das","John","Vardhan","Aurelia","Dibyanshu","Neetu","Pankaj","Jenkin"],"topic":"Angular"},
+... ... {"mid":5,"mentor_name":"Venkat","users":["Nishi Mohan","Supriya","Neha","Aman","Suraj Singh","Ether Swain","Riya Sharma","Pratyush","Pringle","Anchal","Arpita","John","Yash","Suraj","Archeeta","Tushar","Srestha"],"topic":"JavaScript"},
+... ... {"mid":6,"mentor_name":"Swarup Mishra","users":["Aishwarya","Ayush","Varun","Prateek","Debjoti","Asish","Mansi","Riya","Tina","Hardik"],"topic":"Web Development"}])
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("613e3dd0cad94375e106d1b2"),
+                ObjectId("613e3dd0cad94375e106d1b3"),
+                ObjectId("613e3dd0cad94375e106d1b4"),
+                ObjectId("613e3dd0cad94375e106d1b5")
+        ]
+}
+> db.mentor.find().pretty();
+{
+        "_id" : ObjectId("613e3db2cad94375e106d1b0"),
+        "mid" : 1,
+        "mentor_name" : "Rajesh",
+        "users" : [
+                "Rohan Raj",
+                "Akanksha Yadav",
+                "Rutul Mishra",
+                "Rohit",
+                "Priyanka",
+                "Asuthosh Das",
+                "Wallia",
+                "Vardhan",
+                "Anurag Basu",
+                "Pranjal",
+                "Kinjal",
+                "Rituraj",
+                "Neerja",
+                "Pankaj",
+                "Pradhiti"
+        ],
+        "topic" : "SQL"
+}
+{
+        "_id" : ObjectId("613e3dc0cad94375e106d1b1"),
+        "mid" : 2,
+        "mentor_name" : "Vikram",
+        "users" : [
+                "Rohan",
+                "Rahul Raj",
+                "Prathamesh",
+                "Ashuthosh",
+                "Riya Sharma",
+                "Akanksha Yadav",
+                "Rutul Mishra",
+                "Rohit",
+                "Priyanka",
+                "Asuthosh Das",
+                "Wallia",
+                "Vardhan",
+                "Anurag Basu",
+                "Pranjal",
+                "Kinjal",
+                "Rituraj",
+                "Neerja",
+                "Pankaj",
+                "Pradhiti"
+        ],
+        "topic" : "mongoDB"
+}
+{
+        "_id" : ObjectId("613e3dd0cad94375e106d1b2"),
+        "mid" : 3,
+        "mentor_name" : "Divya",
+        "users" : [
+                "Sristi",
+                "Rahul",
+                "Prathamesh",
+                "Aspeshk",
+                "Riya Sharma",
+                "Ashlok Yadav",
+                "Rupesh Mishra",
+                undefined,
+                "Varun",
+                "Vardhan",
+                "Anuradha",
+                "Pritam",
+                "Anjali",
+                "Rituraj",
+                "Neerja"
+        ],
+        "topic" : "DevOps"
+}
+{
+        "_id" : ObjectId("613e3dd0cad94375e106d1b3"),
+        "mid" : 4,
+        "mentor_name" : "Akash Yadav",
+        "users" : [
+                "Rohit",
+                "Raj",
+                "Riya Sharma",
+                "Akanksha Yadav",
+                "Rutul Mishra",
+                "Yash",
+                "Priyanka Das",
+                "John",
+                "Vardhan",
+                "Aurelia",
+                "Dibyanshu",
+                "Neetu",
+                "Pankaj",
+                "Jenkin"
+        ],
+        "topic" : "Angular"
+}
+{
+        "_id" : ObjectId("613e3dd0cad94375e106d1b4"),
+        "mid" : 5,
+        "mentor_name" : "Venkat",
+        "users" : [
+                "Nishi Mohan",
+                "Supriya",
+                "Neha",
+                "Aman",
+                "Suraj Singh",
+                "Ether Swain",
+                "Riya Sharma",
+                "Pratyush",
+                "Pringle",
+                "Anchal",
+                "Arpita",
+                "John",
+                "Yash",
+                "Suraj",
+                "Archeeta",
+                "Tushar",
+                "Srestha"
+        ],
+        "topic" : "JavaScript"
+}
+{
+        "_id" : ObjectId("613e3dd0cad94375e106d1b5"),
+        "mid" : 6,
+        "mentor_name" : "Swarup Mishra",
+        "users" : [
+                "Aishwarya",
+                "Ayush",
+                "Varun",
+                "Prateek",
+                "Debjoti",
+                "Asish",
+                "Mansi",
+                "Riya",
+                "Tina",
+                "Hardik"
+        ],
+        "topic" : "Web Development"
+}
+>
